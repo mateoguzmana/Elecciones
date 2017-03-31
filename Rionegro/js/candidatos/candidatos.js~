@@ -1,0 +1,18 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+$('.salirCandidatos').click(function () {
+    $('#_alertSalirUsuarios .text-modal-body').html('Está seguro que desea salir del modulo de Candidatos?');
+    $('#_alertSalirUsuarios').modal('show');
+});
+
+$("#addCandidatos").click(function() {
+    window.location.href = 'index.php?r=candidatos/create';
+});
+
+$("#viewElecciones").click(function() {
+    window.location.href = 'index.php?r=candidatos/index';
+});

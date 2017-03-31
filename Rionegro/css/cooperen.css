@@ -1,0 +1,140 @@
+
+.modal-dialog-message {
+    margin: 130px auto;
+    width: 350px !important;
+}
+
+.text-modal-body{
+	color: #000000;
+    font: 13px/17px helvetica,arial,verdana,sans-serif;
+    margin-top: 4px;
+}
+
+.modal-footer {
+    border-top: 1px solid #E5E5E5;
+    margin-top: 0;
+    padding: 8px 17px;
+    text-align: right;
+}
+
+.modal-title {
+    color: #333333;
+    font-size: 16px;
+}
+
+.btn-small-template {
+    border-radius: 3px;
+    line-height: 21px;
+    padding: 1px 12px;
+    transition: all 0.2s ease-out 0s;
+}
+
+
+.ui-datepicker {
+    background: none repeat scroll 0 0 #1D2939;
+    border-radius: 2px;
+    margin-top: 1px;
+    width: 310px;
+    z-index: 100000;
+}
+
+.ui-datepicker td a {
+    border-radius: 0;
+    color: #DBE1EE;
+    padding: 5px;
+    transition: all 0.2s ease-out 0s;
+}
+
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+    border-color:#999;
+}
+
+.tg td{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    padding:10px 5px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color:#999;
+    color:#444;
+    background-color:#F7FDFA;
+}
+
+.tg th{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    padding:10px 5px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color:#999;
+    color:#fff;
+    background-color:#26ADE4;
+}
+
+.tg .tg-58iv{
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif !important;;
+    text-align:center;
+}
+
+.tg .tg-nnmv{
+    background-color:#FFFFFF;
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif !important;;
+    text-align:center;
+}
+
+#tbCandidatosZona td {
+    border: 1px #000000 solid;
+    text-align: center;
+}
+
+#tbCandidatosZona td.separateRow {
+    height: 15px;
+    border: none;
+}
+
+#tbCandidatosZona td.separateColumn {
+    border: none;
+}
+
+#tbCandidatosZona td img {
+    padding: 10px 0px;
+}
+
+input[type=radio] {
+    transform: scale(1.5, 1.5);
+    -moz-transform: scale(1.5, 1.5);
+    -ms-transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
+    -o-transform: scale(1.5, 1.5);
+}
+
+input[type="text"] {
+    font-size:1.5em;
+}
+
+.tg .tg-2nko{
+    font-size:medium;
+    font-family:Arial, Helvetica, sans-serif !important;;
+    background-color:#bfbfbf;
+}
+
+.tg .tg-d29k{
+    font-size:medium;
+    font-family:Arial, Helvetica, sans-serif !important;;
+    background-color:#dbeef4;
+}
+
+.tg .tg-souk{
+    font-size:medium;
+    font-family:Arial, Helvetica, sans-serif !important;;
+    background-color:#b9cde5;
+}

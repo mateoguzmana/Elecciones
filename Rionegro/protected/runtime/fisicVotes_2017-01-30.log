@@ -1,0 +1,7 @@
+2017/01/30 12:22:31 [fisicVotes] [loggin] Delegado : jose.pineda
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/SiteController.php (68)
+in /var/www/clients/client19/web33/web/Cooperen/index.php (15)
+2017/01/30 12:23:45 [fisicVotes] [logout] Delegado : 
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/SiteController.php (205)
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/SiteController.php (186)
+in /var/www/clients/client19/web33/web/Cooperen/index.php (15)

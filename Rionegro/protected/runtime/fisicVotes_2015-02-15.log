@@ -1,0 +1,7 @@
+2015/02/15 12:45:23 [fisicVotes] [loggin] Delegado : flor.barrios
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/SiteController.php (67)
+in /var/www/clients/client19/web33/web/Cooperen/index.php (15)
+2015/02/15 12:49:29 [fisicVotes] [logout] Delegado : 
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/SiteController.php (204)
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/SiteController.php (185)
+in /var/www/clients/client19/web33/web/Cooperen/index.php (15)

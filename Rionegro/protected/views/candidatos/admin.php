@@ -1,0 +1,42 @@
+<?php
+/* @var $this CandidatosController */
+/* @var $model Candidatos */
+
+$this->breadcrumbs=array(
+	'Candidatoses'=>array('index'),
+	'Manage',
+);
+
+$this->menu=array(
+	array('label'=>Yii::t('app','List') . ' Candidatos', 'url'=>array('index')),
+	array('label'=>Yii::t('app','Create') . ' Candidatos', 'url'=>array('create')),
+);
+
+?>
+
+<h1>Administrar Candidatos</h1>
+
+<?php $this->widget('zii.widgets.grid.CGridView', array(
+	'id'=>'candidatos-grid',
+	'dataProvider'=>$model->search(),
+	'filter'=>$model,
+	'columns'=>array(
+		'Nombres',
+		'Documento',
+		'Direccion',
+		'Telefono',
+		'Email',
+		'NroRadicado',
+		'FechaInscripcion',
+		/*
+		'Foto',
+		'Celular',
+		*/
+		'CodEleccion',
+		'CodRegion',
+		'CodBarrio',
+		array(
+			'class'=>'CButtonColumn',
+		),
+	),
+)); ?>

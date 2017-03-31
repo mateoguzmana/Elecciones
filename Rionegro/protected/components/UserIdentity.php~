@@ -1,0 +1,89 @@
+<?php
+
+/**
+ * UserIdentity represents the data needed to identity a user.
+ * It contains the authentication method that checks if the provided
+ * data can identity the user.
+ */
+class UserIdentity extends CUserIdentity {
+
+    private $_id;
+    
+    const ERROR_USERNAME_NOT_ACTIVE = 3;
+    
+    /**
+     * Authenticates a user.
+     * The example implementation makes sure if the username and password
+     * are both 'demo'.
+     * In practical applications, this should be changed to authenticate
+     * against some persistent user identity storage (e.g. database).
+     * @return boolean whether authentication succeeds.
+     */
+    public function authenticate() {
+        $users = Usuarios::model()->findByAttributes(array('CedulaAsociado' => $this->username));
+
+        if ($users == null):
+            $this->errorCode = self::ERROR_USERNAME_INVALID;
+        elseif ($this->isUserRegister()):
+            $this->errorCode = self::ERROR_USERNAME_NOT_ACTIVE;
+        else:
+            $this->_id = $users->CedulaAsociado;
+            $this->setState('_name', $users->NombreIntegrado);
+            $this->setState('_document', $users->CedulaAsociado);
+            $this->setState('_idProfile', $users->IdPerfil);
+            $this->errorCode = self::ERROR_NONE;
+        endif;
+        return $this->errorCode;
+    }
+    
+    public function isUserRegister() {
+        $document = Candidatos::model()->findByAttributes(array('Documento' => $this->username));
+        if ($document == null):
+            return false;
+        else:
+            return true;
+        endif;
+    }
+
+    public function authenticateAdmin() {
+        $users = Administrator::model()->findByAttributes(array('User' => $this->username));
+
+        if($users==null):
+            $this->errorCode = self::ERROR_USERNAME_INVALID;
+        elseif($this->password !== $users->Password):
+            $this->errorCode = self::ERROR_PASSWORD_INVALID;
+        else:
+            $this->_id= $users->Id;
+            $this->setState('_name', $users->Name);
+            $this->setState('_document', $users->Document);
+            $this->setState('_idProfile', $users->IdProfile);
+            $this->errorCode = self::ERROR_NONE;
+        endif;            
+        return $this->errorCode;
+    }
+    
+    public function authenticateVoting() {
+        $users = Usuarios::model()->findByAttributes(array('CedulaAsociado' => $this->username));
+
+        if($users==null):
+                $this->errorCode = self::ERROR_USERNAME_INVALID;
+            elseif($this->password !== $users->Password):
+                $this->errorCode = self::ERROR_PASSWORD_INVALID;
+            elseif($users->Estado == 1):
+                $this->errorCode = self::ERROR_USERNAME_NOT_ACTIVE;
+            else:
+                $this->_id= $users->CedulaAsociado;
+                $this->setState('_name', $users->NombreIntegrado);
+                $this->setState('_document', $users->CedulaAsociado);
+                $this->setState('_idProfile', $users->IdPerfil);
+                $this->errorCode = self::ERROR_NONE;
+            endif;            
+            return $this->errorCode;
+    }
+    
+    public function getId()
+    {
+        return $this->id;
+    }
+}
+

@@ -1,0 +1,33 @@
+<div class="pageheader">
+    <h2>
+        <a style="text-decoration: none;" class="salirCandidatos">
+            <img src="images/home.png" class="cursorpointer" 
+                 style="width: 38px; margin-right: 15px; margin-left: 15px;"/> 
+        </a>
+        Candidatos<span></span></h2>      
+</div> 
+
+<div class="contentpanel">
+    <div class="panel-heading">
+        <div class="widget widget-blue">
+            <div class="widget-content">
+                <div class="row">
+                    <div class="col-md-offset-5 col-md-2">
+                        <button class="btn btn-darkblue" style="width:180px;height:40px;" id="showExcel">
+                            Exportar Excel
+                        </button>
+                    </div>
+                </div>
+<?php
+
+?>
+        </div>
+    </div>
+
+</div>
+
+<?php $this->renderPartial('//mensajes/_alertSalirUsuarios'); ?>
+<?php $this->renderPartial('//mensajes/_alertFotos'); ?>
+
+</div>
+

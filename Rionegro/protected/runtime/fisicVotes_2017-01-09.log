@@ -1,0 +1,7 @@
+2017/01/09 09:43:20 [fisicVotes] [loggin] Delegado : amilvia.rios
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/SiteController.php (68)
+in /var/www/clients/client19/web33/web/Cooperen/index.php (15)
+2017/01/09 09:43:58 [fisicVotes] [logout] Delegado : 
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/SiteController.php (205)
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/SiteController.php (186)
+in /var/www/clients/client19/web33/web/Cooperen/index.php (15)

@@ -1,0 +1,14 @@
+<?php
+/* @var $this CandidatosController */
+/* @var $model Candidatos */
+
+$this->breadcrumbs=array(
+	'Candidatoses'=>array('index'),
+	'Create',
+);
+
+?>
+
+<h1 style="text-align:center;">Crear Candidatos</h1>
+
+<?php $this->renderPartial('_form', array('model'=>$model)); ?>

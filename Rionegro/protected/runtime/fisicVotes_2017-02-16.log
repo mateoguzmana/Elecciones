@@ -1,0 +1,18 @@
+2017/02/16 07:56:47 [fisicVotes] [loggin] Usuario : 39280513
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/SiteController.php (129)
+in /var/www/clients/client19/web33/web/Cooperen/index.php (15)
+2017/02/16 07:57:50 [fisicVotes] [status] Usuario : 39280513 Sufragante : 34967566
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/VotacionController.php (195)
+in /var/www/clients/client19/web33/web/Cooperen/index.php (15)
+2017/02/16 07:58:12 [fisicVotes] [status] Usuario : 39280513 Sufragante : 39268661
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/VotacionController.php (195)
+in /var/www/clients/client19/web33/web/Cooperen/index.php (15)
+2017/02/16 07:58:40 [fisicVotes] [status] Usuario : 39280513 Sufragante : 39280295
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/VotacionController.php (195)
+in /var/www/clients/client19/web33/web/Cooperen/index.php (15)
+2017/02/16 07:59:35 [fisicVotes] [status] Usuario : 39280513 Sufragante : 1003305939
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/VotacionController.php (195)
+in /var/www/clients/client19/web33/web/Cooperen/index.php (15)
+2017/02/16 08:00:08 [fisicVotes] [status] Usuario : 39280513 Sufragante : 1063285371
+in /var/www/clients/client19/web33/web/Cooperen/protected/controllers/VotacionController.php (195)
+in /var/www/clients/client19/web33/web/Cooperen/index.php (15)
